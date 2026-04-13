@@ -29,6 +29,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'playmix-mvc-anderkamada'
-          slot-name: 'production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_09E7E5C587DF48A78CADA573433C405A }}
           package: '${{ github.workspace }}/target/*.jar'
